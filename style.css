@@ -97,7 +97,8 @@ header section{
 main{
     margin-top: 70px;
 }
-.player-container{
+.player-container,
+.highlights-container{
     display: flex;
     justify-content: center;
 }
@@ -119,6 +120,29 @@ main{
     font-size: 28px;
     font-weight: 700;
 }
-.player p{
+.player p,
+.txt-info p{
     color: #6C6C6C;
+}
+
+.highlights{
+    width: 72%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 69px;
+}
+.txt-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.txt-info h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: -8px;
+}
+.youtube-vid{
+    width: 110%;
+    height: 400px;
 }
