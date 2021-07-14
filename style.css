@@ -55,18 +55,17 @@ nav ul li a{
 header section{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 .page-head{
     width: 78%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .page-title{
-    width: 40%;
+    width: 80%;
 }
 .page-title h1{
-    width: 95%;
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
@@ -81,7 +80,9 @@ header section{
     transition: transform 1s ease-in-out;
 }
 .theme-image {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .page-head:hover img{
     transform: skewX(-20deg) scale(1.1);
@@ -89,4 +90,35 @@ header section{
 .theme-image img{
     width: 95%;
     transition: transform 1s ease-in;
+}
+/* header style ends here  */
+
+/* main part of the page is here  */
+main{
+    margin-top: 70px;
+}
+.player-container{
+    display: flex;
+    justify-content: center;
+}
+.players{
+    width: 72%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 165px;
+}
+.player{
+    padding: 15px;
+    box-shadow:  0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 100%;
+}
+.player h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+.player p{
+    color: #6C6C6C;
 }
