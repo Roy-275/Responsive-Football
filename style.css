@@ -1,0 +1,50 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styling of header part */
+header{
+    background-color: #2D25A0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 42px;
+}
+.menu{
+    margin-left: -18px;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0px 18px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.login p{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+.login p a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
