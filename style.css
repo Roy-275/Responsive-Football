@@ -168,20 +168,26 @@ footer{
 .logo img{
     width: 55%;
 }
-.footer-nav{
+.footer-nav-container{
     width: 100%;
     background-color: rgb(67, 1, 73);
+    display: flex;
+    justify-content: center;
+}
+.footer-nav{
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 .footer-nav a{
     color: white;
     text-decoration: none;
+    margin-left: 35%;
 }
 .footer-nav p{
-    text-align: center;
     font-weight: 600;
-    line-height: 10px;
+    padding: 0;
+    margin: 0;
 }
 .social-media{
     display: flex;
@@ -208,8 +214,10 @@ i{
 
 /* responsive design starts here  */
 
+
+
 /* for mobile devices */
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 420px) {
     .menu{
         display: none;
     }
@@ -242,6 +250,10 @@ i{
         margin-bottom: -20px;
     }
 
+    main{
+        margin-bottom: 0;
+    }
+
     .players{
         margin-bottom: 60px;
     }
@@ -260,5 +272,27 @@ i{
     .youtube-vid{
         width: 100%;
         height: 250px;
+    }
+
+
+    footer{
+        margin-bottom: 187px;
+        margin-top: 43px;
+    }
+    .footer-nav{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    .footer-nav a {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+    .footer-nav p{
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
     }
 }
