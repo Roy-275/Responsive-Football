@@ -10,6 +10,9 @@ body{
 header{
     background-color: #2D25A0;
     color: white;
+    padding-bottom: 86px;
+}
+.navigation{
     display: flex;
     justify-content: center;
 }
@@ -18,9 +21,6 @@ nav{
     justify-content: space-between;
     width: 85%;
     margin-top: 42px;
-}
-.menu{
-    margin-left: -18px;
 }
 nav ul{
     list-style: none;
@@ -38,13 +38,55 @@ nav ul li a{
     font-weight: 500;
     line-height: 24px;
 }
-.login p{
+.login p,
+.live-link {
     background-color: #E02C6D;
     padding: 10px 24px;
     font-weight: 500;
 }
-.login p a{
+.login p a,
+.live-link a{
     text-decoration: none;
     color: white;
     font-size: 16px;
+}
+
+
+header section{
+    display: flex;
+    justify-content: center;
+}
+.page-head{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-title{
+    width: 40%;
+}
+.page-title h1{
+    width: 95%;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+.page-head:hover .live-link{
+    transform: translate(200px, 0);
+}
+.live-link{
+    width: 25%;
+    margin-top: -40px;
+    margin-bottom: 0;
+    transition: transform 1s ease-in-out;
+}
+.theme-image {
+    width: 50%;
+}
+.page-head:hover img{
+    transform: skewX(-20deg) scale(1.1);
+}
+.theme-image img{
+    width: 95%;
+    transition: transform 1s ease-in;
 }
