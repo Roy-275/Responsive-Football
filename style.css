@@ -5,6 +5,9 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+.fas{
+    color: white;
+}
 
 /* styling of header part */
 header{
@@ -76,7 +79,7 @@ header section{
     transform: translate(200px, 0);
 }
 .live-link{
-    width: 25%;
+    width: 30%;
     margin-top: -40px;
     margin-bottom: 0;
     transition: transform 1s ease-in-out;
@@ -146,7 +149,7 @@ main{
     margin-bottom: -8px;
 }
 .link{
-    width: 25%;
+    width: 30%;
 }
 .youtube-vid{
     width: 110%;
@@ -178,6 +181,7 @@ footer{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0px;
 }
 .footer-nav a{
     color: white;
@@ -217,7 +221,7 @@ i{
 
 
 /* for mobile devices */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 640px) {
     .menu{
         display: none;
     }
@@ -236,7 +240,7 @@ i{
     }
     .live-link,
     .link{
-        width: 40%;
+        width: 45%;
         margin-bottom: 50px;
         margin-top: 30px;
     }
@@ -289,6 +293,104 @@ i{
         margin: 0;
         padding: 0;
         font-size: 12px;
+        margin-left: 20%;
+    }
+    .footer-nav p{
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+}
+/* Design for mobile devices ends here  */
+
+/* Design for tab and medium size devices */
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+    .menu{
+        display: none;
+    }
+    .page-head,
+    .players,
+    .highlights{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+    .page-head h1{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .page-title{
+        width: 100%;
+    }
+    .live-link,
+    .link{
+        width: 45%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .page-head:hover .live-link{
+        transform: translate(50px, 0px);
+    }
+    .page-head:hover img{
+        transform: skewX(-10deg) scale(1);
+    }
+    header section{
+        margin-bottom: -20px;
+    }
+
+    main{
+        margin-bottom: 0;
+    }
+
+    .players{
+        margin-bottom: 60px;
+    }
+
+    
+    .highlights{
+        column-gap: 20px;
+        height: 400px;
+    }
+    .highlights h1{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlights p{
+        margin-bottom: -10px;
+    }
+    .txt-info{
+        margin: 0;
+        padding: 0;
+        margin-bottom: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    .youtube-iframe{
+        display: flex;
+        align-items: center;
+    }
+    .youtube-vid{
+        width: 100%;
+        height: 250px;
+    }
+
+
+    footer{
+        margin-bottom: 187px;
+        margin-top: 80px;
+    }
+    .footer-nav{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    .footer-nav a {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        margin-left: 20%;
     }
     .footer-nav p{
         font-weight: 600;
